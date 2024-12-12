@@ -51,17 +51,9 @@ const RolesCreate = () => {
             <RolesForm
                 newCustomer
                 defaultValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    img: '',
-                    phoneNumber: '',
-                    dialCode: '',
-                    country: '',
-                    address: '',
-                    city: '',
-                    postcode: '',
-                    tags: [],
+                    Name: '',
+                    Description: '',
+         
                 }}
                 onFormSubmit={handleFormSubmit}
             >

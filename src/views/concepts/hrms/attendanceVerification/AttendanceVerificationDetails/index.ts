@@ -1,0 +1,3 @@
+import AttendanceVerificationDetails from './AttendanceVerificationDetails'
+
+export default AttendanceVerificationDetails

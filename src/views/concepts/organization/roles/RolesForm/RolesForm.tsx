@@ -22,22 +22,9 @@ type CustomerFormProps = {
 } & CommonProps
 
 const validationSchema: ZodType<CustomerFormSchema> = z.object({
-    firstName: z.string().min(1, { message: 'First name required' }),
-    lastName: z.string().min(1, { message: 'Last name required' }),
-    email: z
-        .string()
-        .min(1, { message: 'Email required' })
-        .email({ message: 'Invalid email' }),
-    dialCode: z.string().min(1, { message: 'Please select your country code' }),
-    phoneNumber: z
-        .string()
-        .min(1, { message: 'Please input your mobile number' }),
-    country: z.string().min(1, { message: 'Please select a country' }),
-    address: z.string().min(1, { message: 'Addrress required' }),
-    postcode: z.string().min(1, { message: 'Postcode required' }),
-    city: z.string().min(1, { message: 'City required' }),
-    img: z.string(),
-    tags: z.array(z.object({ value: z.string(), label: z.string() })),
+    Name: z.string().min(1, { message: 'Name required' }),
+    Description: z.string().min(1, { message: 'Description required' }),
+    
 })
 
 const RolesForm = (props: CustomerFormProps) => {
@@ -55,10 +42,10 @@ const RolesForm = (props: CustomerFormProps) => {
         control,
     } = useForm<CustomerFormSchema>({
         defaultValues: {
-            ...{
-                banAccount: false,
-                accountVerified: true,
-            },
+            // ...{
+            //     banAccount: false,
+            //     accountVerified: true,
+            // },
             ...defaultValues,
         },
         resolver: zodResolver(validationSchema),
@@ -85,7 +72,7 @@ const RolesForm = (props: CustomerFormProps) => {
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="gap-4 flex flex-col flex-auto">
                         <OverviewSection control={control} errors={errors} />
-                        <AddressSection control={control} errors={errors} />
+                        {/* <AddressSection control={control} errors={errors} /> */}
                     </div>
                     <div className="md:w-[370px] gap-4 flex flex-col">
                         <ProfileImageSection

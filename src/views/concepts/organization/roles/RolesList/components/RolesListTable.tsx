@@ -94,34 +94,34 @@ const RolesListTable = () => {
                 },
             },
             {
-                header: 'Email',
-                accessorKey: 'email',
+                header: 'Description',
+                accessorKey: 'Description',
             },
-            {
-                header: 'location',
-                accessorKey: 'personalInfo.location',
-            },
-            {
-                header: 'Status',
-                accessorKey: 'status',
-                cell: (props) => {
-                    const row = props.row.original
-                    return (
-                        <div className="flex items-center">
-                            <Tag className={statusColor[row.status]}>
-                                <span className="capitalize">{row.status}</span>
-                            </Tag>
-                        </div>
-                    )
-                },
-            },
-            {
-                header: 'Spent',
-                accessorKey: 'totalSpending',
-                cell: (props) => {
-                    return <span>${props.row.original.totalSpending}</span>
-                },
-            },
+            // {
+            //     header: 'location',
+            //     accessorKey: 'personalInfo.location',
+            // },
+            // {
+            //     header: 'Status',
+            //     accessorKey: 'status',
+            //     cell: (props) => {
+            //         const row = props.row.original
+            //         return (
+            //             <div className="flex items-center">
+            //                 <Tag className={statusColor[row.status]}>
+            //                     <span className="capitalize">{row.status}</span>
+            //                 </Tag>
+            //             </div>
+            //         )
+            //     },
+            // },
+            // {
+            //     header: 'Spent',
+            //     accessorKey: 'totalSpending',
+            //     cell: (props) => {
+            //         return <span>${props.row.original.totalSpending}</span>
+            //     },
+            // },
             {
                 header: '',
                 id: 'action',

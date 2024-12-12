@@ -1,9 +1,9 @@
 import AdaptiveCard from '@/components/shared/AdaptiveCard'
 import Container from '@/components/shared/Container'
-import CustomerListSelected from './components/RolesListSelected'
 import RolesListActionTools from './components/RolesListActionTools'
 import RolesListTableTools from './components/RolesListTableTools'
 import RolesListTable from './components/RolesListTable'
+import RolesListSelected from './components/RolesListSelected'
 
 const RolesList = () => {
     return (
@@ -20,7 +20,7 @@ const RolesList = () => {
                     </div>
                 </AdaptiveCard>
             </Container>
-            <CustomerListSelected />
+            <RolesListSelected />
         </>
     )
 }

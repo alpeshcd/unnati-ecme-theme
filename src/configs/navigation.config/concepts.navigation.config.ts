@@ -104,8 +104,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         },
                         subMenu: [],
                     },
-                 
-                    
+
                     {
                         key: 'concepts.Organization.Department',
                         path: `${CONCEPTS_PREFIX_PATH}/Organization/Department`,
@@ -139,10 +138,10 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Document Types',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Document Types`,
-                        title: 'Document Types',
-                        translateKey: 'nav.conceptsAi.Document Types',
+                        key: 'concepts.Organization.document',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/document`,
+                        title: 'Document',
+                        translateKey: 'nav.conceptsAi.document',
                         icon: 'aiImage',
                         type: NAV_ITEM_TYPE_ITEM,
                         authority: [ADMIN, USER],
@@ -155,10 +154,10 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Leave Type',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Leave Type`,
+                        key: 'concepts.Organization.leave',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/leave`,
                         title: 'Leave Type',
-                        translateKey: 'nav.conceptsAi.Leave Type',
+                        translateKey: 'nav.conceptsAi.leave',
                         icon: 'aiImage',
                         type: NAV_ITEM_TYPE_ITEM,
                         authority: [ADMIN, USER],
@@ -172,7 +171,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Organization.Work Week',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Work Week`,
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/work-week`,
                         title: 'Work Week',
                         translateKey: 'nav.conceptsAi.Work Week',
                         icon: 'aiImage',
@@ -187,8 +186,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Payroll Deductions',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Payroll Deductions`,
+                        key: 'concepts.Organization.payroll-deductions',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/payroll-deductions`,
                         title: 'Payroll Deductions',
                         translateKey: 'nav.conceptsAi.Payroll Deductions',
                         icon: 'aiImage',
@@ -203,8 +202,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Status',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Status`,
+                        key: 'concepts.Organization.status',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/status`,
                         title: 'Status',
                         translateKey: 'nav.conceptsAi.Status',
                         icon: 'aiImage',
@@ -219,8 +218,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Stage',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Stage`,
+                        key: 'concepts.Organization.stage',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/stage`,
                         title: 'Stage',
                         translateKey: 'nav.conceptsAi.Stage',
                         icon: 'aiImage',
@@ -235,8 +234,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Area',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Area`,
+                        key: 'concepts.Organization.area',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/area`,
                         title: 'Area',
                         translateKey: 'nav.conceptsAi.Area',
                         icon: 'aiImage',
@@ -251,8 +250,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.Organization.Area Status',
-                        path: `${CONCEPTS_PREFIX_PATH}/Organization/Area Status`,
+                        key: 'concepts.Organization.areastatus',
+                        path: `${CONCEPTS_PREFIX_PATH}/Organization/area-status`,
                         title: 'Area Status',
                         translateKey: 'nav.conceptsAi.Area Status',
                         icon: 'aiImage',
@@ -268,17 +267,14 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                 ],
             },
-           
-           
-        // roles concept   
-           
-   
+
+            // roles concept
 
             {
                 key: 'concepts.HRMS',
                 path: '',
                 title: 'HRMS',
-                translateKey: 'nav.conceptsAi.HRMS',
+                translateKey: 'nav.conceptsAi.hrms',
                 icon: 'dashboardHRMS',
                 type: NAV_ITEM_TYPE_COLLAPSE,
                 authority: [ADMIN, USER],
@@ -290,10 +286,10 @@ const conceptsNavigationConfig: NavigationTree[] = [
                 },
                 subMenu: [
                     {
-                        key: 'concepts.HRMS.Employee',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Employee`,
+                        key: 'concepts.hrms.employee',
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/employee`,
                         title: 'Employee',
-                        translateKey: 'nav.conceptsAi.Employee',
+                        translateKey: 'nav.conceptsAi.employee',
                         icon: 'aiImage',
                         type: NAV_ITEM_TYPE_ITEM,
                         authority: [ADMIN, USER],
@@ -307,7 +303,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Attendance',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Attendance`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/attendance`,
                         title: 'Attendance',
                         translateKey: 'nav.conceptsAi.Attendance',
                         icon: 'aiImage',
@@ -322,8 +318,8 @@ const conceptsNavigationConfig: NavigationTree[] = [
                         subMenu: [],
                     },
                     {
-                        key: 'concepts.HRMS.Payroll',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Payroll`,
+                        key: 'concepts.hrms.Payroll',
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/payroll`,
                         title: 'Payroll',
                         translateKey: 'nav.conceptsAi.Payroll',
                         icon: 'aiImage',
@@ -339,7 +335,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Advance Pay Check',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Advance Pay Check`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/advance`,
                         title: 'Advance Pay Check',
                         translateKey: 'nav.conceptsAi.Advance Pay Check',
                         icon: 'aiImage',
@@ -355,7 +351,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Payroll Records',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Payroll Records`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/payroll-record`,
                         title: 'Payroll Records',
                         translateKey: 'nav.conceptsAi.Payroll Records',
                         icon: 'aiImage',
@@ -371,7 +367,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Paycheck Transactions',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Paycheck Transactions`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/paycheck`,
                         title: 'Paycheck Transactions',
                         translateKey: 'nav.conceptsAi.Paycheck Transactions',
                         icon: 'aiImage',
@@ -387,7 +383,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Leaves',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Leaves`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/leaves`,
                         title: 'Leaves',
                         translateKey: 'nav.conceptsAi.Leaves',
                         icon: 'aiImage',
@@ -403,7 +399,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Attendance Verification',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Attendance Verification`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/attendance-verification`,
                         title: 'Attendance Verification',
                         translateKey: 'nav.conceptsAi.Attendance Verification',
                         icon: 'aiImage',
@@ -419,7 +415,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.HRMS.Track Documents',
-                        path: `${CONCEPTS_PREFIX_PATH}/HRMS/Track Documents`,
+                        path: `${CONCEPTS_PREFIX_PATH}/hrms/track-documents`,
                         title: 'Track Documents',
                         translateKey: 'nav.conceptsAi.Track Documents',
                         icon: 'aiImage',
@@ -452,7 +448,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                 subMenu: [
                     {
                         key: 'concepts.Stock Management.Item Types',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Item Types`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/item-types`,
                         title: 'Item Types',
                         translateKey: 'nav.conceptsAi.Item Types',
                         icon: 'aiImage',
@@ -468,7 +464,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Items',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Items`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/items`,
                         title: 'Items',
                         translateKey: 'nav.conceptsAi.Items',
                         icon: 'aiImage',
@@ -484,7 +480,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Stock',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Stock`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/item-stock`,
                         title: 'Stock',
                         translateKey: 'nav.conceptsAi.Stock',
                         icon: 'aiImage',
@@ -500,7 +496,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Stock History',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Stock History`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/stock-history`,
                         title: 'Stock History',
                         translateKey: 'nav.conceptsAi.Stock History',
                         icon: 'aiImage',
@@ -516,7 +512,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Vendor',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Vendor`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/vendor`,
                         title: 'Vendor',
                         translateKey: 'nav.conceptsAi.Vendor',
                         icon: 'aiImage',
@@ -532,7 +528,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.UOM',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/UOM`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/uom`,
                         title: 'UOM',
                         translateKey: 'nav.conceptsAi.UOM',
                         icon: 'aiImage',
@@ -548,7 +544,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Brand',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Brand`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/brand`,
                         title: 'Brand',
                         translateKey: 'nav.conceptsAi.Brand',
                         icon: 'aiImage',
@@ -564,7 +560,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Inward Stock',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Inward Stock`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/inward-stock`,
                         title: 'Inward Stock',
                         translateKey: 'nav.conceptsAi.Inward Stock',
                         icon: 'aiImage',
@@ -580,7 +576,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Item Pricing',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Item Pricing`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/item-pricing`,
                         title: 'Item Pricing',
                         translateKey: 'nav.conceptsAi.Item Pricing',
                         icon: 'aiImage',
@@ -596,7 +592,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Stock Management.Item Price History',
-                        path: `${CONCEPTS_PREFIX_PATH}/Stock Management/Item Price History`,
+                        path: `${CONCEPTS_PREFIX_PATH}/stock-management/item-price-history`,
                         title: 'Item Price History',
                         translateKey: 'nav.conceptsAi.Item Price History',
                         icon: 'aiImage',
@@ -629,7 +625,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                 subMenu: [
                     {
                         key: 'concepts.CRM.Consultant ',
-                        path: `${CONCEPTS_PREFIX_PATH}/CRM/Consultant `,
+                        path: `${CONCEPTS_PREFIX_PATH}/crm/consultant `,
                         title: 'Consultant ',
                         translateKey: 'nav.conceptsAi.Consultant ',
                         icon: 'aiImage',
@@ -645,7 +641,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.CRM.Customer',
-                        path: `${CONCEPTS_PREFIX_PATH}/CRM/Customer`,
+                        path: `${CONCEPTS_PREFIX_PATH}/crm/Customer`,
                         title: 'Customer',
                         translateKey: 'nav.conceptsAi.Customer',
                         icon: 'aiImage',
@@ -661,7 +657,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.CRM.Lead',
-                        path: `${CONCEPTS_PREFIX_PATH}/CRM/Lead`,
+                        path: `${CONCEPTS_PREFIX_PATH}/crm/Lead`,
                         title: 'Lead',
                         translateKey: 'nav.conceptsAi.Lead',
                         icon: 'aiImage',
@@ -677,7 +673,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.CRM.Deal',
-                        path: `${CONCEPTS_PREFIX_PATH}/CRM/Deal`,
+                        path: `${CONCEPTS_PREFIX_PATH}/crm/deal`,
                         title: 'Deal',
                         translateKey: 'nav.conceptsAi.Deal',
                         icon: 'aiImage',
@@ -710,7 +706,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                 subMenu: [
                     {
                         key: 'concepts.Purchase Order.Material Request ',
-                        path: `${CONCEPTS_PREFIX_PATH}/Purchase Order/Material Request `,
+                        path: `${CONCEPTS_PREFIX_PATH}/purchase-order/material-request `,
                         title: 'Material Request ',
                         translateKey: 'nav.conceptsAi.Material Request ',
                         icon: 'aiImage',
@@ -726,7 +722,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.Purchase Order.Purchase Order',
-                        path: `${CONCEPTS_PREFIX_PATH}/Purchase Order/Purchase Order`,
+                        path: `${CONCEPTS_PREFIX_PATH}/purchase-order/purchase-order`,
                         title: 'Purchase Order',
                         translateKey: 'nav.conceptsAi.Purchase Order',
                         icon: 'aiImage',
@@ -759,7 +755,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                 subMenu: [
                     {
                         key: 'concepts.PMS.Ticket Status',
-                        path: `${CONCEPTS_PREFIX_PATH}/PMS/Ticket Status`,
+                        path: `${CONCEPTS_PREFIX_PATH}/pms/ticket-status`,
                         title: 'Ticket Status',
                         translateKey: 'nav.conceptsAi.Ticket Status',
                         icon: 'aiImage',
@@ -775,7 +771,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.PMS.Ticket',
-                        path: `${CONCEPTS_PREFIX_PATH}/PMS/Ticket`,
+                        path: `${CONCEPTS_PREFIX_PATH}/pms/Ticket`,
                         title: 'Ticket  ',
                         translateKey: 'nav.conceptsAi.Ticket',
                         icon: 'aiImage',
@@ -791,7 +787,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.PMS.Work Order',
-                        path: `${CONCEPTS_PREFIX_PATH}/PMS/Work Order`,
+                        path: `${CONCEPTS_PREFIX_PATH}/pms/work-order`,
                         title: 'Work Order',
                         translateKey: 'nav.conceptsAi.Work Order',
                         icon: 'aiImage',
@@ -807,7 +803,7 @@ const conceptsNavigationConfig: NavigationTree[] = [
                     },
                     {
                         key: 'concepts.PMS.Tasks',
-                        path: `${CONCEPTS_PREFIX_PATH}/PMS/Tasks`,
+                        path: `${CONCEPTS_PREFIX_PATH}/pms/Tasks`,
                         title: 'Tasks',
                         translateKey: 'nav.conceptsAi.Tasks',
                         icon: 'aiImage',
