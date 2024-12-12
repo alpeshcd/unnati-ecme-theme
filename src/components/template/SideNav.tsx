@@ -74,10 +74,11 @@ const SideNav = ({
                     className={classNames(
                         sideNavCollapse && 'ltr:ml-[11.5px] ltr:mr-[11.5px]',
                         sideNavCollapse
-                            ? SIDE_NAV_CONTENT_GUTTER
-                            : LOGO_X_GUTTER,
+                        ? SIDE_NAV_CONTENT_GUTTER
+                        : LOGO_X_GUTTER,
                     )}
                 />
+                <img src=''/>
             </Link>
             <div className={classNames('side-nav-content', contentClass)}>
                 <ScrollBar style={{ height: '100%' }} direction={direction}>
